@@ -32,7 +32,7 @@ The sentence structure should follow Japanese word order.
 - Do not provide particles in the sentence structure 
 - Do not provide tenses or conjugation in the sentence structure. 
 - Remember to consider beginner level sentence structures.  
-
+- Reference the <file>sentence-structures-examples.xml</file> for good structure examples. 
 
 ### Clues
 
