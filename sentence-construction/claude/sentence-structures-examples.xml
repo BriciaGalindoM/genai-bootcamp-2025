@@ -1,36 +1,78 @@
-<sentence-structure-example>
-    <example>
-        <sentence> The bird is black </sentence>
-        <structure>[Subject][Adjective-desu]. </structure>
-    </example>
-    <example>
-        <sentence> The raven is in the garden </sentence>
-        <structure>[Location][Subject][Verb]. </structure>
-    </example>   
-    <example>
-        <sentence> Put the garbage in the garden </sentence>
-        <structure> [Location][Object][Verb].</structure>
-    </example>  
-    <example>
-        <sentence> Did you see the raven? </sentence>
-        <structure>[Subject][Object][Verb-past]. </structure>
-    </example>     
-    <example>
-        <sentence> This morning I saw the raven </sentence>
-        <structure> [Time][Subject][Object][Verb].</structure>
-    </example>    
-    <example>
-        <sentence> Are you going? </sentence>
-        <structure>[Subject] [Verb-masu ka]. </structure>
-    </example>    
-    <example>
-        <sentence> Did you eat the food? </sentence>
-        <structure>[Object][Verb - past ka]. </structure>
-    </example>    
-    <example>
-        <sentence> The raven is looking at the garden </sentence>
-        <structure>[Subject] [Verb-progressive][Location]. </structure>
-    </example>
-<sentence-structure-example> 
+<sentence-structure-database>
+    <category name="basic-sentences">
+        <example>
+            <sentence>The sun is bright</sentence>
+            <structure>[Subject][Adjective-desu]</structure>
+        </example>
+        <example>
+            <sentence>The cat is on the roof</sentence>
+            <structure>[Location][Subject][Verb]</structure>
+        </example>
+        <example>
+            <sentence>Place the book on the shelf</sentence>
+            <structure>[Location][Object][Verb]</structure>
+        </example>
+        <example>
+            <sentence>Did you hear the thunder?</sentence>
+            <structure>[Subject][Object][Verb-past]</structure>
+        </example>
+        <example>
+            <sentence>Yesterday I bought the newspaper</sentence>
+            <structure>[Time][Subject][Object][Verb]</structure>
+        </example>
+        <example>
+            <sentence>Are you sleeping?</sentence>
+            <structure>[Subject][Verb-masu ka]</structure>
+        </example>
+        <example>
+            <sentence>Did you finish the homework?</sentence>
+            <structure>[Object][Verb-past ka]</structure>
+        </example>
+        <example>
+            <sentence>The dog is playing in the yard</sentence>
+            <structure>[Subject][Verb-progressive][Location]</structure>
+        </example>
+        <example>
+            <sentence>The moon is silver</sentence>
+            <structure>[Subject][Adjective-desu]</structure>
+        </example>
+        <example>
+            <sentence>The children are at school</sentence>
+            <structure>[Location][Subject][Verb]</structure>
+        </example>
+        <example>
+            <sentence>The bird is black</sentence>
+            <structure>[Subject][Adjective-desu]</structure>
+        </example>
+        <example>
+            <sentence>The raven is in the garden</sentence>
+            <structure>[Location][Subject][Verb]</structure>
+        </example>
+        <example>
+            <sentence>Put the garbage in the garden</sentence>
+            <structure>[Location][Object][Verb]</structure>
+        </example>
+        <example>
+            <sentence>Did you see the raven?</sentence>
+            <structure>[Subject][Object][Verb-past]</structure>
+        </example>
+        <example>
+            <sentence>This morning I saw the raven</sentence>
+            <structure>[Time][Subject][Object][Verb]</structure>
+        </example>
+        <example>
+            <sentence>Are you going?</sentence>
+            <structure>[Subject][Verb-masu ka]</structure>
+        </example>
+        <example>
+            <sentence>Did you eat the food?</sentence>
+            <structure>[Object][Verb-past ka]</structure>
+        </example>
+        <example>
+            <sentence>The raven is looking at the garden</sentence>
+            <structure>[Subject][Verb-progressive][Location]</structure>
+        </example>
+    </category>
+</sentence-structure-database>
 
 
