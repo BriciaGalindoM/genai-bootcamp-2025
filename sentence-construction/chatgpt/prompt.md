@@ -27,6 +27,8 @@ The formatting output will generally contain three parts:
 
 ### Sentence Structure
 
+The sentence structure should follow Japanese word order.
+
 - Do not provide particles in the sentence structure 
 - Do not provide tenses or conjugation in the sentence structure. 
 - Remember to consider beginner level sentence structures.  
@@ -126,10 +128,6 @@ Here are examples of input and output:
 
 
     </example>
-
-
-
-
 
 
 
