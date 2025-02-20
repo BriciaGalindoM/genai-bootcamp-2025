@@ -1,0 +1,94 @@
+``mermaid
+
+flowchart TB
+    subgraph Client["Client Layer"]
+        User["👤 User/Student"]
+        WebApp["🖥️ Web Application"]
+        Mobile["📱 Mobile App"]
+    end
+
+    subgraph Frontend["Frontend Layer"]
+        UI["UI Components"]
+        State["State Management"]
+        Cache["Browser Cache"]
+    end
+
+    subgraph API["API Layer"]
+        Gateway["API Gateway"]
+        Auth["Authentication"]
+        RateLimit["Rate Limiter"]
+    end
+
+    subgraph Agent["Agent Layer"]
+        StateManager["State Manager"]
+        subgraph States
+            Setup["Setup State"]
+            Attempt["Attempt State"]
+            Clues["Clues State"]
+        end
+        PromptEngine["Prompt Engine"]
+        FeedbackGen["Feedback Generator"]
+    end
+
+    subgraph LLM["LLM Integration"]
+        LLMService["LLM Service"]
+        PromptTemplates["Prompt Templates"]
+    end
+
+    subgraph Knowledge["Knowledge Base"]
+        VectorDB["Vector Database"]
+        subgraph Index["Indexes"]
+            Grammar["Grammar Rules"]
+            Vocab["Vocabulary"]
+            Patterns["Language Patterns"]
+        end
+        RAG["RAG System"]
+    end
+
+    subgraph Storage["Storage Layer"]
+        UserDB["User Database"]
+        ProgressDB["Progress Tracking"]
+        SessionDB["Session Management"]
+    end
+
+    %% Client to Frontend
+    User --> WebApp & Mobile
+    WebApp & Mobile --> UI
+
+    %% Frontend to API
+    UI --> Gateway
+    State --> Cache
+    UI --> State
+
+    %% API to Agent
+    Gateway --> Auth
+    Auth --> RateLimit
+    RateLimit --> StateManager
+
+    %% Agent Flow
+    StateManager --> States
+    Setup & Attempt & Clues --> PromptEngine
+    PromptEngine --> FeedbackGen
+
+    %% LLM Integration
+    PromptEngine --> LLMService
+    PromptTemplates --> LLMService
+
+    %% Knowledge Base Integration
+    LLMService --> RAG
+    RAG --> VectorDB
+    VectorDB --> Index
+
+    %% Storage Integration
+    StateManager --> UserDB
+    FeedbackGen --> ProgressDB
+    Gateway --> SessionDB
+
+    %% Styling
+    classDef primary fill:#d1eeff,stroke:#0077b6
+    classDef secondary fill:#fff3cd,stroke:#856404
+    classDef storage fill:#e2e3e5,stroke:#383d41
+    
+    class Client,Frontend,API primary
+    class Agent,LLM,Knowledge secondary
+    class Storage storage
